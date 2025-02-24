@@ -23,7 +23,7 @@ const App = () => {
         preserveDrawingBuffer: true,
       }}
     >
-      <ScrollControls pages={7} damping={0.1}>
+      <ScrollControls pages={12} damping={0.1}>
         <SheetProvider sheet={demoSheet}>
           <PerspectiveCamera
             theatreKey="Camera"

@@ -14,15 +14,9 @@ export function Revolver(props) {
 
   const scroll = useScroll();
 
-  console.log(scroll);
-
-  // useFrame(() => {
-  //   // console.log(scroll.scroll.current);
-
-  //   demoSheet.sequence.position = scroll.scroll.current * 7;
-  // });
-
-  // console.log(demoSheet.sequence.pointer.length);
+  useFrame(() => {
+    demoSheet.sequence.position = scroll.scroll.current * 7;
+  });
 
   return (
     <group {...props} dispose={null}>
