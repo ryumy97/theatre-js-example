@@ -15,7 +15,7 @@ export function Revolver(props) {
   const scroll = useScroll();
 
   useFrame(() => {
-    demoSheet.sequence.position = scroll.scroll.current * 7;
+    demoSheet.sequence.position = scroll.damping * 7;
   });
 
   return (

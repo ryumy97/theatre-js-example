@@ -7,10 +7,8 @@ import { BackSide } from "three";
 import { Revolver } from "./Revolver";
 import { demoSheet } from "./Sheet";
 
-if (import.meta.env.DEV) {
-  studio.initialize();
-  studio.extend(extension);
-}
+studio.initialize();
+studio.extend(extension);
 
 const App = () => {
   return (
